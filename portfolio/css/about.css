@@ -1,0 +1,56 @@
+body {
+  background-color: rgb(0, 0, 0);
+}
+.container {
+  background-color: deeppink;
+  height: 220px;
+  width: 100%;
+  padding: 5%;
+}
+
+.rose {
+  float: left;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+.right {
+  height: 200px;
+  width: 1200px;
+  background-color: deeppink;
+  text-align: center;
+  color: aliceblue;
+  justify-content: space-between;
+  padding-top: 5px;
+}
+.container2 {
+  background-color: black;
+  height: 400px;
+}
+.heading1 {
+  text-align: center;
+  color: deeppink;
+  font-size: 3rem;
+  font-family: Arial, Helvetica, sans-serif;
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.boxes {
+  width: 1200px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-content: space-between;
+  margin-left: 5%;
+}
+
+.content {
+  background: deeppink;
+  color: rgb(0, 0, 0);
+  padding: 20px;
+  text-align: center;
+}
+.content .icon {
+  padding: 8px;
+  font-size: 30px;
+}

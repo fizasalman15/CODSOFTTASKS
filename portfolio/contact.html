@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact</title>
+    <link rel="stylesheet" href="css/contact.css" />
+    <script
+      src="https://kit.fontawesome.com/63aa32abdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .fizz {
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px;
+        position: relative;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+      }
+      .navbar ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: deeppink;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+      }
+      .navbar ul li:hover::after {
+        width: 100%;
+      }
+      .form1 {
+        border: 4px solid deeppink;
+        padding: 10px;
+        background-color: grey;
+        position: absolute;
+        right: 500px;
+      }
+
+      .img2 {
+        position: absolute;
+        right: 950px;
+        top: 130px;
+      }
+      body {
+        background-image: url("images/bgphoto.jpg");
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-size: 100% 100%;
+      }
+      .content {
+        background: rgba(0, 0, 0, 0.8);
+        color: deeppink;
+        padding: 20px;
+        text-align: center;
+      }
+      .content .icon {
+        padding: 8px;
+        font-size: 30px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="images/Color logo with background.png" class="fizz" />
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT </a></li>
+        <li><a href="contact.html">CONTACT </a></li>
+      </ul>
+    </div>
+    <div class="container">
+      <form>
+        <h1>Contact Me</h1>
+        <input type="text" id="firstName" placeholder="First Name" required />
+        <input type="text" id="lastName" placeholder="Last Name" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <input type="text" id="mobile" placeholder="Phone Number" required />
+        <h4>Enter Your Message</h4>
+        <textarea required></textarea>
+        <input type="submit" value="Submit" id="button" />
+      </form>
+    </div>
+
+    <footer class="content">
+      <i class="fa-brands fa-facebook icon"></i>
+      <i class="fa-brands fa-linkedin icon"></i>
+      <i class="fa-brands fa-instagram icon"></i>
+      <br />
+      &copy FIZA SALMAN
+    </footer>
+  </body>
+</html>

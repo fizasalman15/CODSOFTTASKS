@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About</title>
+    <link rel="stylesheet" href="css/about.css" />
+    <script
+      src="https://kit.fontawesome.com/63aa32abdf.js"
+      crossorigin="anonymous"
+    ></script>
+    <style>
+      .navbar {
+        width: 85%;
+        margin: auto;
+        padding: 20px 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .fizz {
+        width: 200px;
+        height: 50px;
+        cursor: pointer;
+      }
+      .navbar ul li {
+        list-style: none;
+        display: inline-block;
+        margin: 20px;
+        position: relative;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: whitesmoke;
+        text-transform: uppercase;
+      }
+      .navbar ul li::after {
+        content: "";
+        height: 3px;
+        width: 0;
+        background: deeppink;
+        position: absolute;
+        left: 0;
+        bottom: -10px;
+        transition: 0.5s;
+      }
+      .navbar ul li:hover::after {
+        width: 100%;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="navbar">
+      <img src="images/Color logo with background.png" class="fizz" />
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="about.html">ABOUT </a></li>
+        <li><a href="contact.html">CONTACT </a></li>
+      </ul>
+    </div>
+
+    <div class="container">
+      <div class="left">
+        <img src="images/pinkrose.jpg" alt="rose" class="rose" />
+      </div>
+      <div class="right">
+        <h2>ABOUT ME</h2>
+        I am a dedicated and motivated IT student currently pursuing a bachelor
+        degree in Information Technology at Sir syed university of engineering
+        and technology (SSUET) . Currently in my 6th semester , I have
+        maintained a commendable academic record of GPA with 3.43 . Passionate
+        about the Feld of technology
+      </div>
+    </div>
+
+    <div class="container2">
+      <div class="heading1">MY CERTIFICATES</div>
+      <div class="boxes">
+        <div class="one iamge">
+          <img src="images/oracle.jpg" height="200px" width="300px" />
+        </div>
+        <div class="two image">
+          <img src="images/aptech.jpg" height="200px" width="300px" />
+        </div>
+        <div class="three image">
+          <img src="images/udemy.png" height="200px" width="300px" />
+        </div>
+      </div>
+    </div>
+
+    <footer class="content">
+      <i class="fa-brands fa-facebook icon"></i>
+      <i class="fa-brands fa-linkedin icon"></i>
+      <i class="fa-brands fa-instagram icon"></i>
+      <br />
+      &copy FIZA SALMAN
+    </footer>
+  </body>
+</html>
