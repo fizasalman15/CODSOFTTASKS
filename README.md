@@ -1,2 +1,2 @@
 # CODSOFTTASKS
-codsoft tasks completes\d
+codsoft tasks completed
